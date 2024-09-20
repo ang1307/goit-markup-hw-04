@@ -136,9 +136,10 @@ img {
     padding-bottom: 188px;
     padding-top: 188px;
     text-align: center;
-    background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)), url("../images/people-office 1.jpg");
+    background-image: 
+     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+     url(../images/people-office\ 1.jpg);
+    max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -367,7 +368,10 @@ img {
 
 .portfolio-item {
     width: calc((100% - 48px) / 3);
-    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 
+        0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-category-container {
@@ -377,6 +381,32 @@ img {
     margin-bottom: 8px;
 }
 
+.portfolio-overlay {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.paragraph-overlay {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4d5ae5;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-overlay:hover .paragraph-overlay {
+    transform: translateY(0);
+}
 
 
 
