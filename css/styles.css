@@ -150,6 +150,7 @@ img {
      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
      url(../images/people-office\ 1.jpg);
     max-width: 1440px;
+    max-height: 600px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -157,20 +158,14 @@ img {
 }
 
 .hero-title {
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
     font-size: 56px;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
-    max-width: 496px;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    display: block;
-    margin: auto;
-
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        max-width: 496px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 48px;
 }
 
 
